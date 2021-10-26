@@ -8,6 +8,7 @@ import lombok.Builder;
 import one.digitalinnovation.beerstock.dto.BeerDTO;
 import one.digitalinnovation.beerstock.enums.BeerType;
 
+
 @Builder
 public class BeerDTOBuilder {
 
