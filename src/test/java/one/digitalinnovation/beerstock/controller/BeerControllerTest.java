@@ -162,7 +162,6 @@ public class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNoContent());
     }
-
     @Test
     void whenDELETEIsCalledWithInvalidIdThenNotFoundStatusIsReturned() throws Exception {
         //when
@@ -173,7 +172,6 @@ public class BeerControllerTest {
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNotFound());
     }
-
     @Test
     void whenPATCHIsCalledToIncrementDiscountThenOKstatusIsReturned() throws Exception {
         QuantityDTO quantityDTO = QuantityDTO.builder()
